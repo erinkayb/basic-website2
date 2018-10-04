@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Circle sounds</title>
+	<link rel="stylesheet" type="text/css" href="sounds.css">
+	<script type="text/javascript" src="paper-full.js"></script>
+	<script type="text/paperscript" canvas="myCanvas">
+	// Create a Paper.js Path to draw a line into it:
+
+	for(var i = 0; i < 2000; i+=100){
+		for(var j = 0; j < 2000; j+=100){
+			var myCircle = new Path.Circle(new Point(i, j), 10);
+			myCircle.fillColor = 'purple';
+		}
+		var myCircle = new Path.Circle(new Point(i, j), 5);
+		myCircle.fillColor = 'purple';
+	}
+
+
+</script>
+</script>
+
+</head>
+<body>
+
+	<canvas id="myCanvas" resize></canvas>
+
+</body>
+</html>
